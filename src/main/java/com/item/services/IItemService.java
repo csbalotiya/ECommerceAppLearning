@@ -6,13 +6,13 @@ import java.util.List;
 
 public interface IItemService {
 
-	public List<Item> getItems();
+    public List<Item> getItems();
 
-	public Item getItem(String itemId);
+    public Item getItem(String itemId);
 
-	public Item addItem(Item item);
+    public Item addItem(Item item);
 
-	public Item saveItem(Item item);
+    public Item saveItem(Item item);
 
-	public void removeItem(String itemId);
+    public void removeItem(String itemId);
 }
