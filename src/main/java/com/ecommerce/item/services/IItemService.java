@@ -1,6 +1,6 @@
-package com.item.services;
+package com.ecommerce.item.services;
 
-import com.item.entity.Item;
+import com.ecommerce.item.entity.Item;
 
 import java.util.List;
 

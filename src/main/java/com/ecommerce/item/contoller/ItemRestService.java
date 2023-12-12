@@ -1,31 +1,33 @@
-package com.item.contoller;
+package com.ecommerce.item.contoller;
 
-import com.item.entity.Item;
-import com.item.services.IItemService;
+import com.ecommerce.item.entity.Item;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController()
 @RequestMapping("/api")
-//@Slf4j
 @CrossOrigin(origins = "http://localhost:3000")
+@ComponentScan
 public class ItemRestService {
 
+    // TODO Add logger functionality
 //    private static final Logger logger = (Logger) LoggerFactory.getLogger(ItemRestService.class);
 
     @Autowired
-    private IItemService IItemService;
+    private com.ecommerce.item.services.IItemService IItemService;
 
     //get all Items
     @GetMapping("/items")
+    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
     public ResponseEntity<List<Item>> getItems() {
         try {
             System.out.println("Fetching All Item !!");
-//            logger.info("Fetching All Items.");
             List<Item> items = this.IItemService.getItems();
             return ResponseEntity.ok(items);
         } catch (Exception exp) {
