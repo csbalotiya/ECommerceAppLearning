@@ -1,7 +1,7 @@
-package com.item.services;
+package com.ecommerce.item.services;
 
-import com.item.dao.ItemDao;
-import com.item.entity.Item;
+import com.ecommerce.item.entity.Item;
+import com.ecommerce.item.dao.ItemDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
