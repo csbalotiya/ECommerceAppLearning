@@ -7,17 +7,16 @@ The diagram shows flow of how we implement User Registration, User Login and Aut
 ![image](https://github.com/csbalotiya/ECommerceAppLearning/assets/74857569/f74f8846-c6ab-4b05-b2c5-13dbf32dd761)
 
 
+## Refresh Token
+
+![image](https://github.com/csbalotiya/ECommerceAppLearning/assets/74857569/d2162597-c8e8-4fb0-8692-2556b4779117)
+
+
 ## Spring Boot Server Architecture with Spring Security
 
 You can have an overview of our Spring Boot Server with the diagram below:
 
 ![image](https://github.com/csbalotiya/ECommerceAppLearning/assets/74857569/1bd5ec34-4190-4aaf-992e-a03830cd026b)
-
-
-## Refresh Token
-
-![image](https://github.com/csbalotiya/ECommerceAppLearning/assets/74857569/d2162597-c8e8-4fb0-8692-2556b4779117)
-
 
 ## Configure Spring Datasource, JPA, App properties
 
