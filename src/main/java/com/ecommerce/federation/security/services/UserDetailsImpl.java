@@ -1,10 +1,10 @@
 package com.ecommerce.federation.security.services;
 
+import com.ecommerce.federation.models.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import com.ecommerce.federation.models.User;
 
 import java.util.Collection;
 import java.util.List;
