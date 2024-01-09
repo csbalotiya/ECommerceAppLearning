@@ -1,6 +1,7 @@
 package com.ecommerce.item.contoller;
 
 import com.ecommerce.item.entity.Item;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.HttpStatus;
@@ -14,6 +15,7 @@ import java.util.List;
 @RequestMapping("/api")
 @CrossOrigin(origins = "http://localhost:3000")
 @ComponentScan
+@SecurityRequirement(name = "jwt")
 public class ItemRestService {
 
     // TODO Add logger functionality
@@ -50,6 +52,7 @@ public class ItemRestService {
 
     // Add Item
     @PostMapping(path = "/items")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<Item> addItem(@RequestBody Item item) {
 
         try {

@@ -1,5 +1,6 @@
 package com.ecommerce.federation.controllers;
 
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/test")
 @ComponentScan
+@SecurityRequirement(name = "jwt")
 public class TestController {
     @GetMapping("/all")
     public String allAccess() {
