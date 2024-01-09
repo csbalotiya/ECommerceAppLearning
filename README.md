@@ -46,7 +46,8 @@ ecommerce.app.jwtExpirationMs=86400000
 ### Swagger
 URl = http://localhost:8080/swagger-ui/index.html
 
-![img.png](img.png)
+![image](https://github.com/csbalotiya/ECommerceServerApp/assets/74857569/81a8e0b6-6912-4876-93e7-cf754a54dd89)
+
 
 # Run following SQL insert statements
 
