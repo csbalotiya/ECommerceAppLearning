@@ -43,7 +43,10 @@ ecommerce.app.jwtSecret= ======================ECommerce=Spring=================
 ecommerce.app.jwtExpirationMs=86400000
 
 
+### Swagger
+URl = http://localhost:8080/swagger-ui/index.html
 
+![img.png](img.png)
 
 # Run following SQL insert statements
 
